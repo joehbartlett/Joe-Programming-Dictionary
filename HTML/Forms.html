@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms | Joe's Programming</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <p>
+        The HTML form element represents a document section containing interactive controls for submitting information.
+    </p>
+    <p>The form can be used as a container for a collection of inputs</p>
+    <h3>Input Types</h3>
+    <table style="width: 60%;">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Used for</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td>Valid email addresses only</td>
+                <td><input id="email" type="email" name="email" placeholder="joe.bloggs@gmail.com"></td>
+            </tr>
+            <tr>
+                <td><label for="username">Username</label></td>
+                <td></td>
+                <td><input type="username" id="username" name="username" placeholder="username"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td>Asterixed for password entry</td>
+                <td><input type="password" id="password" name="password" placeholder="password"></td>
+            </tr>
+            <tr>
+                <td><label for="submit">Submit</label></td>
+                <td>To be included as part of a form</td>
+                <td><input type="submit" id="submit" ></td>
+            </tr>
+            <tr>
+                <td>Radio</td>
+                <td>For selection of one option</td>
+                <td><input type="radio" name="radioEx" value="one"><input type="radio" name="radioEx" value="two"></td>
+            </tr>
+            <tr>
+                <td><label for="checkbox">Checkbox</label></td>
+                <td>For selection of multiple options</td>
+                <td><input type="checkbox" id="checkbox" value="agree" checked ></td>
+            </tr>
+            <tr>
+                <td><label for="date">Date</label> </td>
+                <td>Date selector</td>
+                <td><input type="date" id="date" name="date"></td>
+            </tr>
+            <tr>
+                <td><label for="range">Range</label></td>
+                <td></td>
+                <td>
+                    <input type="range" id="range" name="volume" min="0" max="10" step="2" value="6"> 
+                </td>
+            </tr>
+            <tr>
+                <td><label for="color">Color</label></td>
+                <td>Color selector / RGB, Hex, or HSL</td>
+                <td><input type="color" id="color" name="color"></td>
+            </tr>
+            <tr>
+                <td><label for="Month-Selector">Select</label></td>
+                <td>For selecting an option from a list</td>
+                <td><select name="Month" id="Month-Selector">
+                    <option value="Jan">Jan</option>
+                    <option value="Feb">Feb</option>
+                    <option value="Mar">Mar</option>
+                    <option value="Apr">Apr</option>
+                    <option value="May">May</option>
+                    <option value="Jun">Jun</option>
+                    <option value="Jul">Jul</option>
+                    <option value="Aug">Aug</option>    
+                    <option value="Sep">Sep</option>
+                    <option value="Oct">Oct</option>
+                    <option value="Nov">Nov</option>
+                    <option value="Dec">Dec</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="number">Number</label></td>
+                <td>Number selector</td>
+                <td><input type="number" id="number" placeholder="Enter a number" min="-20" step="5"></td>
+            </tr>
+            <tr>
+                <td><label for="SpecialRequest">Textarea</label></td>
+                <td>Entering a text box</td>
+                <td><textarea name="TextExample" id="SpecialRequest" cols="30" rows="2" placeholder="Special Requests"></textarea></td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

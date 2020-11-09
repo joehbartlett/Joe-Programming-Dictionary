@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+</head>
+<body>
+    <h1>Selectors</h1>
+    <p>
+        A CSS selector is the part of a CSS rule that describes what elements in a document the rule will match. The matching elements will have the rule's specified style applied to them.
+    </p>
+    <label for="SelectorTable"></label>
+    <table id="SelectorTable">
+        <thead>
+            <tr>
+                <th>Selector</th>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>*</td>
+                <td>Universal selector</td>
+                <td>Selects everything on a page</td>
+            </tr>
+            <tr>
+                <td>h1</td>
+                <td>Element selector</td>
+                <td>Selects a specific element wether thats a h1, li, or table</td>
+            </tr>
+            <tr>
+                <td>#id</td>
+                <td>ID selector</td>
+                <td>Singles out an individual element. Cannot have more than one on a page</td>
+            </tr>
+            <tr>
+                <td>.class</td>
+                <td>class selector</td>
+                <td>The CSS class selector matches elements based on the contents of their class attribute.</td>
+            </tr>
+            <tr>
+                <td>li a</td>
+                <td>descendant selectors</td>
+                <td>Only anchor tags inside of an li will be styled. Not li's</td>
+            </tr>
+            <tr>
+                <td>h2 + p</td>
+                <td>adjacent selector</td>
+                <td>Select only the element that immediately proceeds another element, for example the first p after h2's</td>
+            </tr>
+            <tr>
+                <td>div > li</td>
+                <td>child selector</td>
+                <td>Select only li's that are direct children / decsendants of a div</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Psuedo classes</h2>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Glossary/Pseudo-class">Pseudo class</a> selectors targets elements depending on their state rather than on information from the document tree. For example, the selector a:visited applies styles only to links that the user has already followed.</p>
+    <h2>Psuedo elements</h2>
+    <p>A <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements">psuedo element</a> is a keyword added to a selector that lets you style a specific part of the selected element(s). For example, ::first-line can be used to change the font of the first line of a paragraph.</p>
+    <h2>Specificity</h2>
+    <p>
+        Specificity is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied. Specificity is based on the matching rules which are composed of different sorts of CSS selectors.
+    </p>
+</body>
+</html>
